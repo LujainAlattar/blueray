@@ -1,0 +1,332 @@
+/* navbar style */
+.logo img {
+    height: 45px;
+}
+
+.navbar {
+    background-color: black;
+}
+
+.navbar ul li a {
+    color: white;
+    margin-right: 20px;
+}
+
+.navbar ul li a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.dropdown-item:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+/* Style for the white circle */
+.white-circle {
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+/* Style for the icon inside the white circle */
+.white-circle .phone-icon {
+    color: red;
+    font-size: 15px;
+}
+
+.phone-icon-circle {
+    border: 1px solid red;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+
+.language-toggle {
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    color: white;
+    margin-left: 15px;
+}
+
+/* Style for the language options (English and Arabic) */
+.language-option {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Style for the selected language */
+.language-option.active {
+    color: black;
+    background-color: white;
+}
+
+/* Style the search */
+.search-icon {
+    color: white;
+    font-size: larger;
+    border-right: 1px solid white;
+    padding-right: 10px;
+}
+
+.search-box {
+    background-color: black;
+    border: none;
+    color: white;
+    margin-left: 10px;
+}
+
+.search-box::placeholder {
+    color: white;
+}
+
+/* ///////////////////////////////////////////////////////// */
+/* hero section style */
+.hero-container video {
+    height: auto;
+    width: 100%;
+}
+
+.carousel-caption {
+    margin-left: -100px;
+    margin-top: -400px;
+    text-align: left;
+}
+
+.cursoul-button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 10px;
+}
+
+.carousel-indicators {
+    position: absolute;
+    margin-left: 900px;
+}
+
+.carousel-indicators button {
+    width: 10px;
+    height: 5px;
+    background-color: #bbb;
+    border: none;
+    border-radius: 50%;
+    margin: 0 5px;
+    padding: 0;
+}
+
+.carousel-indicators button.active {
+    background-color: red;
+    width: 150px;
+}
+
+/* ////////////////////////////// */
+/* chat  */
+.chat-background {
+    background-color: white;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+}
+
+.chat-background i {
+    color: red;
+    font-size: 40px;
+    padding: 10px;
+}
+
+/* ////////////////////////// */
+/* about us section */
+.about-section {
+    margin-top: 60px;
+}
+
+.about-header {
+    text-align: center;
+}
+
+.about-images {
+    margin-top: 50px;
+}
+
+.desc-about {
+    color: gray;
+}
+
+.about-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px;
+}
+
+.vision-section {
+    margin-bottom: -200px;
+}
+
+.title-about {
+    background-image: linear-gradient(to right, white 50%, rgba(128, 128, 128, 0.54) 50%);
+    background-repeat: no-repeat;
+    width: 100px;
+}
+
+/* ///////////////////// */
+/*  cars cursoul */
+.cars-container {
+    background-image: url("/media/cursoul-background.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    flex-wrap: wrap;
+}
+
+.cars-container .carousel-inner {
+    justify-content: center;
+    align-items: center;
+}
+
+.cars-carousel img {
+    width: 80%;
+    height: 100%;
+}
+
+.cars-nav {
+    width: 100%;
+    justify-content: center;
+}
+
+/* //////////////////////////////////////// */
+/* style latest container */
+.latest-container {
+    margin: 50px auto;
+    width: 90%;
+}
+
+.swiper {
+    width: 600px;
+    height: 300px;
+}
+
+.swiper-slide {
+    flex: 1;
+    margin: 10px;
+    /* Adjust the card size */
+    width: 300px;
+}
+
+.card {
+    width: 400px;
+    height: 500px;
+    border-radius: 0px;
+    border: none;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.card img{
+    height: 300px;
+    object-fit: cover;
+}
+
+.card button{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+
+.card:hover .card-title {
+    color: red;
+}
+
+.card:hover button {
+    background-color: black;
+    color: white;
+}
+
+.card::before {
+    content: "+"; 
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.466);
+    padding: 20px;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+.card:hover::before {
+    opacity: 1; 
+}
+
+
+/* last section */
+.test-container{
+    background-color: #bbbbbbb9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.right{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:start;
+}
+.left{
+    width: 500px;
+}
+
+
+.footer-card{
+    display: flex;
+    gap: 10px;
+    margin: auto;
+    margin-top: 20px;
+    border-bottom: 1px solid white;
+    padding: 10px;
+}
+footer p, footer h5{
+    color: white;
+}
+footer{
+    background-color: black;
+}
+
+.footer-logo{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 40px;
+}
+
+.footer-logo img{
+    width: 100px;
+    border-bottom: 1px solid white;
+}

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!--  styles link -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- link to font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- swiper library link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- scripts link -->
+    <script src="js/index.js"></script>
+
+
+
+    <title>MITSUBISHI MOTORS</title>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <div class="navbar-container">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="logo">
+                    <img src="/media/logo.png" alt="logo">
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CARS
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item text-dark" href="#">Mitsubishi Outlander</a></li>
+                                <li><a class="dropdown-item text-dark" href="#">Eclipse Cross</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item text-dark" href="#">show more</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                ABOUT MITSUBISHI
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item text-dark" href="#">Company</a></li>
+                                <li><a class="dropdown-item text-dark" href="#">Cars</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">ABOUT JORDAN</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CUSTOMER CARE
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item text-dark" href="#">Contact Information</a></li>
+                                <li><a class="dropdown-item text-dark" href="#">FAQs</a></li>
+                                <li><a class="dropdown-item text-dark" href="#">Support Articles</a></li>
+                                <li><a class="dropdown-item text-dark" href="#">Product Manuals and Documentation</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">VIRTUAL SHOWROOM</a>
+                        </li>
+                        <li class="icon">
+                            <div class="white-circle phone-icon-circle">
+                                <i class="fa-solid phone-icon fa-phone-volume"></i>
+                            </div>
+                        </li>
+                        <li class="icon">
+                            <div class="white-circle">
+                                <i class="fa-solid  fa-envelope"></i>
+                            </div>
+                        </li>
+                        <li class="icon">
+                            <div class="white-circle">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="language-toggle">
+                                <div class="language-option active" data-language="english"
+                                    onclick="toggleLanguage('english')">EN</div>
+                                <div class="language-option" data-language="arabic" onclick="toggleLanguage('arabic')">
+                                    AR</div>
+                            </div>
+
+                        </li>
+                    </ul>
+
+                    <form class="d-flex" role="search">
+                        <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <input class="form-control me-2 search-box" type="search" placeholder="SEARCH"
+                            aria-label="Search">
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- navbar end -->
+
+    <!-- hero section start -->
+    <div class="hero-container">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <video controls class="d-block" autoplay>
+                        <source src="media/2022 Mitsubishi Outlander _ Outlander Reveal.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="carousel-item">
+                    <video controls class="d-block" autoplay>
+                        <source src="media/Mitsubishi Motors PH presents the New Xpander Cross.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="carousel-item">
+                    <video controls class="d-block" autoplay>
+                        <source src="media/Pajero Promotional Video.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>THE COMPACT SUV REINVENTED</h5>
+                <p>INSIDE IT'S A SPACIOUS, STYLISH 7-SEATER, OUTSIDE</p>
+                <P>IT'S A NEW GENERATION COMPACT SUV</P>
+                <button class="cursoul-button">DISCOVER MORE</button>
+            </div>
+        </div>
+    </div>
+    <!-- hero section end -->
+
+    <!-- fixed chat icon -->
+    <div class="chat-container">
+        <div class="chat-background">
+            <i class="fa-solid fa-comment-dots"></i>
+        </div>
+    </div>
+    <!-- end of fixed chat icon -->
+
+
+
+    <!-- start about us section -->
+    <div class="about-section">
+        <div class="about-header">
+            <p><span style="color: gray;">ABOUT US</span></p>
+            <h3>VISION & MISSION</h3>
+        </div>
+        <div class="row about-row">
+            <div class="col-md-6 col-sm-12 mission-section">
+                <h4 class="mission title-about">MISSION</h4>
+                <p class="desc-about">Continuous unrivaled success</p>
+                <img src="media/about-1.jpg" alt="car">
+            </div>
+            <div class="col-md-6 col-sm-12 vision-section">
+                <h4 class="vision title-about">VISION</h4>
+                <p class="desc-about">To create an image that inspire our customer's enthusiasm through the contribution
+                    and involvement of our employees.</p>
+                <img src="media/about-2.jpg" alt="car">
+            </div>
+        </div>
+    </div>
+    <!-- end about us section -->
+
+
+
+    <!-- start cars section -->
+    <div class="cars-container">
+        <ul class="nav nav-underline cars-nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">ALL VEHICLES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">ECLIPS CROSS 2022</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">ASX</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">OUTLINDER</a>
+            </li>
+        </ul>
+        <div id="cars-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="media/cursoul-1.png" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="media/cursoul-2.png" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="media/cursoul-3.png" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="media/coursoul-4.png" alt="Image 2">
+                </div>
+            </div>
+            <button class="carousel-control-prev circule-button" type="button" data-bs-target="#cars-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next circule-button" type="button" data-bs-target="#cars-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+    <div style="display: flex; flex-wrap: wrap;gap: 20px;  justify-content: center; align-items: center;">
+        <p><b> 2023 MITSUBISHI ECLIPS CROSS</b></p>
+        <BUtton style="background-color: white;">EXPLORE MORE</BUtton>
+    </div>
+    <!-- end cars section -->
+
+    <!-- start cars update section -->
+    <div class="latest-container">
+        <div class="about-header">
+            <p><span style="color: gray;">ABOUT US</span></p>
+            <h3>VISION & MISSION</h3>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="media/images2.jpg" class="card-img-top" alt="car1">
+                        <div class="card-body">
+                            <h5 class="card-title">lorem</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <button>EXPLORE MORE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="media/3.jpg" class="card-img-top" alt="car1">
+                        <div class="card-body">
+                            <h5 class="card-title">lorem</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <button>EXPLORE MORE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="media/images4.jpg" class="card-img-top" alt="car1">
+                        <div class="card-body">
+                            <h5 class="card-title">lorem</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <button>EXPLORE MORE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="media/images5.jpg" class="card-img-top" alt="car1">
+                        <div class="card-body">
+                            <h5 class="card-title">lorem</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <button>EXPLORE MORE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="media/images6.jpg" class="card-img-top" alt="car1">
+                        <div class="card-body">
+                            <h5 class="card-title">lorem</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <button>EXPLORE MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Add Swiper pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- Add Swiper navigation buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <!-- end cars update section -->
+
+    <!-- start test section -->
+    <div class="test-container">
+        <div class="row">
+            <div class="right">
+                <span style="color: gray;"><p>BOOK A TEST DRIVE</p></span>
+                <h3>TEST DRIVE A MITSUBISHI CAR</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos debitis quia dolore vero, repellendus error minus vitae rerum, inventore quas, repudiandae suscipit praesentium ex iste? Fugiat aperiam inventore veniam corrupti?</p>
+                <button>EXPLORE MORE</button>
+            </div>
+            <div class="left">
+                <img src="/media/car-end.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- end test section -->
+
+
+        <!-- start footer section -->
+        <div class="footer-container">
+            <footer>
+                <div class="row">
+                    <div class="col-lg-4 footer-card">
+                        <img src="media/test.jpg" alt="">
+                        <p>TEST DRIVE</p>
+                    </div>
+                    <div class="col-lg-4 footer-card">
+                        <img src="media/location.jpg" alt="">
+                        <p>DEALER LOCATOR</p>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 footer-card">
+                        <img src="media/car.jpg" alt="">
+                        <p>CONFIGURE</p>
+                    </div>
+                    <div class="col-lg-4 footer-card">
+                        <img src="media/brouches.jpg" alt="">
+                        <p>BROCHURES</p>
+                    </div>
+
+                </div>
+                <div class="footer-logo">
+                    <img src="media/logo.png" alt="">
+                </div>
+                <div class="container p-4">
+                    <!--Grid row-->
+                    <div class="row mt-4">
+                        <!--Grid column-->
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Lorem Ipsum</h5>
+                
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#!" class="text-white"><i class="fas fa-book fa-fw fa-sm me-2"></i>Lorem Ipsum</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white"><i class="fas fa-book fa-fw fa-sm me-2"></i>Lorem Ipsum</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white"><i class="fas fa-user-edit fa-fw fa-sm me-2"></i>Lorem Ipsum</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Grid column-->
+                
+                        <!--Grid column-->
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Lorem Ipsum</h5>
+                
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#!" class="text-white"><i class="fas fa-shipping-fast fa-fw fa-sm me-2"></i>Lorem Ipsum</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white"><i class="fas fa-backspace fa-fw fa-sm me-2"></i>Lorem Ipsum</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white"><i class="far fa-file-alt fa-fw fa-sm me-2"></i>Lorem Ipsum</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white"><i class="far fa-file-alt fa-fw fa-sm me-2"></i>Lorem Ipsum</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Grid column-->
+                
+                        <!--Grid column-->
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Lorem Ipsum</h5>
+                
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#!" class="text-white">Lorem Ipsum</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Lorem Ipsum</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Lorem Ipsum</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white"><i class="fas fa-briefcase fa-fw fa-sm me-2"></i>Lorem Ipsum</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Grid column-->
+                
+                        <!--Grid column-->
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Lorem Ipsum</h5>
+                
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#!" class="text-white"><i class="fas fa-at fa-fw fa-sm me-2"></i>Lorem Ipsum</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white"><i class="fas fa-shipping-fast fa-fw fa-sm me-2"></i>Lorem Ipsum</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white"><i class="fas fa-envelope fa-fw fa-sm me-2"></i>Lorem Ipsum</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </div>
+                <!-- Grid container -->
+                
+                <!-- Copyright -->
+                <div class="text-center text-light p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                    © 2023 Lorem Ipsum. All rights reserved.
+                </div>
+                
+            </footer>
+        </div>
+        <!-- end footer section -->
+
+
+
+
+    <!-- bootstrap link  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <!-- link to font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Include jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- swiper library  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+    <!-- scripts link -->
+    <script src="js/index.js"></script>
+
+    <script>
+
+        // swiper js
+        document.addEventListener("DOMContentLoaded", function () {
+            // Initialize Swiper when the DOM is ready
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 'auto',
+                spaceBetween: 20,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+        });
+    </script>
+</body>
+
+</html>
